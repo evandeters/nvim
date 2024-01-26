@@ -1,5 +1,3 @@
-require("evan.remap")
-require("evan.set")
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
@@ -32,10 +30,7 @@ return require('lazy').setup({
 
   {
           'rose-pine/neovim',
-          as = 'rose-pine',
-          config = function()
-                  vim.cmd('colorscheme rose-pine')
-          end
+          name = 'rose-pine',
   },
 
   {
