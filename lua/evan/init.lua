@@ -16,7 +16,6 @@ vim.opt.rtp:prepend(lazypath)
 return require('lazy').setup({
     'nvim-tree/nvim-tree.lua',
     'nvim-tree/nvim-web-devicons',
-    'github/copilot.vim',
     'nvim-treesitter/playground',
     "nvim-lua/plenary.nvim",
     'mbbill/undotree',
@@ -32,8 +31,7 @@ return require('lazy').setup({
 
 
     {
-        'nvim-telescope/telescope.nvim', tag = '0.1.5',
-        -- or                            , branch = '0.1.x',
+        'nvim-telescope/telescope.nvim', tag = '0.1.8',
         dependencies = { {'nvim-lua/plenary.nvim'} }
     },
 
@@ -53,7 +51,7 @@ return require('lazy').setup({
 
     {
         'VonHeikemen/lsp-zero.nvim',
-        branch = 'v3.x',
+        branch = 'v4.x',
         dependencies = {
             --- Uncomment these if you want to manage LSP servers from neovim
             {'williamboman/mason.nvim'},
